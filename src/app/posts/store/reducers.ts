@@ -9,6 +9,22 @@ export const initialState: PostsStateInterface = {
 };
 
 export const reducers = createReducer(
-    initialState,
-    on(PostsActions.getPosts, (state) => ({ ...state, isLoading: true }))
-)
+  initialState,
+
+  on(PostsActions.getPosts, (state) => ({
+    ...state,
+    isLoading: true
+  })),
+
+  on(PostsActions.getPostsSuccess, (state, action) => ({
+    ...state,
+    isLoading: false,
+    posts: action.posts,
+  })),
+  
+  on(PostsActions.getPostsFailure, (state, action) => ({
+    ...state,
+    isLoading: false,
+    error: action.error,
+  }))
+);
