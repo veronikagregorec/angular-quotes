@@ -1,4 +1,8 @@
-# NgrxPosts
+# Angular Quotes
+
+Angular quotes with NgRx.
+
+![](screenshot/front.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
