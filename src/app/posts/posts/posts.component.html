@@ -1,9 +1,17 @@
-<h1>Popular Quotes</h1>
+<div class="wrap">
+   <div class="wrapInsideTitle">
+      <h1>Popular Quotes</h1>
+   </div>
 
-<div *ngIf="isLoading$ | async">Loading...</div>
-
-<div *ngIf="error$ | async as error">{{ error }}</div>
-
-<div *ngFor="let post of posts$ | async">
-   <div class="animation">{{ post.title }}</div> 
+   <div class="wrapInsideContent">
+      <div class="loading" *ngIf="isLoading$ | async"></div>
+      
+      <div *ngIf="error$ | async as error">{{ error }}</div>
+      
+      <div class="animate">
+         <div *ngFor="let post of posts$ | async">
+            <div class="animateText">{{ post.title }}</div>
+         </div>
+      </div>
+   </div>
 </div>
