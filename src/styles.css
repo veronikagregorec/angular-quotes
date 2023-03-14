@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --darkerPurpleColor: #72275B;
+    --darkPurpleColor: #913175;
+    --beigeColor: #FCE2DB;
+    --blackColor: #000;
+    --whiteColor:#fff;
+}
+
+::selection {
+    background-color: var(--darkPurpleColor);
+    color: var(--whiteColor);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
