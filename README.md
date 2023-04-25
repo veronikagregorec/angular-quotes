@@ -20,7 +20,7 @@ All of the latest versions of <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>
 
 ## Screenshot
 
-Homepage with quotes
+Homepage with quotes.
 
 ![](screenshot/front.png)
 
